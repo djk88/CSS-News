@@ -32,7 +32,7 @@ Instructions:
         ii. Child ✔️
         iii. Adjacent ❌
         iv. General sibling ❌
-        v. Attribute selector ❌
+        v. Attribute selector ✔️
         vi. Any of the following pseudo selectors: ✔️
             1. :first-child
             2. :last-child✔️
