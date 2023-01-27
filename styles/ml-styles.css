@@ -82,7 +82,7 @@ nav a:after {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: var(--accent-color);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -115,11 +115,16 @@ footer {
 
 .footer-bottom{
     text-align: center;
+    color: white;
 }
 
 a[href$="#1"]{
     text-decoration: none;
     color: white;
+}
+
+a[href$="#1"]:hover{
+    text-decoration: underline;
 }
 
 @media (min-width: 760px) {
