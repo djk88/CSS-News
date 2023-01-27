@@ -43,9 +43,6 @@ img {
     height: auto;
 }
 
-section {
-    width: 1300px
-}
 
 body {
     background-color: var(--background-color);
