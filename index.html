@@ -17,24 +17,29 @@
 </head>
 
 <body>
-    <nav>
-        <header>
-            <div class="nav-content">
-                <div class="nav-hamburger">
-                </div>
+    <header>
+        <div class="nav-lateral">
+            <div>
+                <h1 class="nav-h1">BCIT News</h1>
             </div>
-        </header>
-    </nav>
-    <div class="sub-nav-continer">
-        <nav class="sub-nav">
-            <div class="sub-nav-contnent">
-                <a class="sub-nav-item" href="#"></a>
-                <a class="sub-nav-item" href="#"></a>
-                <a class="sub-nav-item" href="#"></a>
-                <a class="sub-nav-item" href="#"></a>
+            <div>
+                <button class="hamburger-menu" id="btn-menu">
+                    <span class="hamburger-menu-content" tabindex="-1">
+                    <span class="sr-only">Menu</span>
+                    <span class="bar" id="bar"></span> </span>
+                </button>
             </div>
+        </div>
+        <nav id="main-navigation">
+            <ul>
+                <li><a href="#0">News</a></li>
+                <li><a href="#0">Shows</a></li>
+                <li><a href="#0">Live</a></li>
+                <li><a href="#0">Local</a></li>
+                <li><a href="#0">Weather</a></li>
+            </ul>
         </nav>
-    </div>
+    </header>
     <main>
         <article class="david-article"></article>
         <article class="sheng-article"></article>
@@ -42,7 +47,13 @@
     </main>
 </body>
 <footer>
-
+    <div class="footer-flex">
+        <div>About Us</div>
+        <div>Contact</div>
+        <div>Join Us</div>
+        <div>Legal</div>
+    </div>
+    <div class="footer-bottom">2023 - SSD Team</div>
 </footer>
 <script src="/scripts/ml-scripts.js"></script>
 
