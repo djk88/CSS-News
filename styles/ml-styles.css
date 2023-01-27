@@ -33,7 +33,6 @@
 }
 
 nav {
-    /*display: none;*/
     height: 0;
     visibility: hidden;
     opacity: 0;
@@ -44,7 +43,6 @@ nav {
 }
 
 nav.show {
-    /*display: block;*/
     height: 100%;
     visibility: visible;
     opacity: 1;
@@ -56,20 +54,18 @@ nav ul {
 	list-style: none;
 }
 
-nav li {
-	border: none;
-	/*padding: 15px;*/
+/*Adjacent Sibiling*/
+nav li + li {
+    border-top: 2px solid grey;
 }
 
 nav a {
-	/*text-decoration: none;*/
     color: white;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
     
     display: inline-block;
-    /*padding: 15px 20px;*/
     padding: 10px 15px;
     position: relative;
 }
@@ -100,10 +96,7 @@ nav a:hover:after {
 
 footer {
     background-color: black;
-    /*color: white;*/
     padding: 10px;
-    /*position: absolute;
-    bottom: 0;*/
     width: 100%;
     font-size: 12px;
 }
@@ -118,11 +111,13 @@ footer {
     color: white;
 }
 
+/*Attribute Selector*/
 a[href$="#1"]{
     text-decoration: none;
     color: white;
 }
 
+/*Attribute Selector*/
 a[href$="#1"]:hover{
     text-decoration: underline;
 }
@@ -133,7 +128,6 @@ a[href$="#1"]:hover{
     }
 
     nav {
-        /*display:block;*/
         visibility: visible;
         opacity: 1;
         height: 100%;
@@ -148,8 +142,11 @@ a[href$="#1"]:hover{
 
     nav li{
         width: 100%;
-        /*border-left: 2px solid gray;
-        border-right: 2px solid gray;*/
+    }
+
+    /*Adjacent Sibiling*/
+    nav li + li{
+        border-top: none;
     }
 
     .nav-lateral {
