@@ -31,7 +31,7 @@ Instructions:
         i. Descendant ✔️
         ii. Child ✔️
         iii. Adjacent ✔️
-        iv. General sibling ❌
+        iv. General sibling ✔️
         v. Attribute selector ✔️
         vi. Any of the following pseudo selectors: ✔️
             1. :first-child

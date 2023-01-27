@@ -9,7 +9,7 @@
 }
 
 .header-title {
-    font-size: 1.8rem;
+    font-size: var(--articleHeaderTextSize);
     font-weight: 700;
 }
 
@@ -22,7 +22,7 @@
 .item-title-wrapper {
     padding: 15px;
     padding-top: 0px;
-    font-size: 0.9rem;
+    font-size: var(--articleTextSize);
 }
 
 .item-title-wrapper a {
@@ -58,7 +58,10 @@
 
 .tech-news .item-title-wrapper {
     grid-row: 1;
+    padding-left: 0px;
 }
+
+
 
 
 
