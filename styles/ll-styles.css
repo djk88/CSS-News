@@ -1,39 +1,100 @@
 /* All of the styles for Lisa Lee */
 .lisa-article {
-    border: 2px solid red;
     width: 900px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 200px 1.5fr 200px;
-    column-gap: 20px;
     row-gap: 10px;
     grid-template-areas: "header  header  header"
                          "main    main    column"
                          "row    row   column";
 }
 
-
 .ll_header{
     grid-area: header;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .ll_main{
-    grid-area: main;
+    grid-area: main;  
+    display: grid;
+    padding-right: 15px;
+}
+
+.ll_main img{
+    width: 100%;
+    grid-column: 1 / span 2;
+    margin: 0 auto;
 }
 
 .ll_row{
     grid-area: row;
     display: flex;
     padding-right: 10px;
+    padding-bottom: 20px;
     justify-content: space-between;
 }
-
 
 .ll_column{
     grid-area: column;
 }
 
+/* example of a child selector */
+div>h1 {
+    color: var(--accent-color)
+}
+
+
+.ll_row>div{
+    padding-right: 10px;
+}
+
+/* general siblings */
+aside div ~ div{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
 @media (max-width: 768px) {
+    .lisa-article {
+        width: 700px;
+        margin: 0 auto;
+    }
+    .ll_main{
+        grid-row: 2;
+        grid-column: 1 / span 3;
+        margin: 0 auto;
+    }
+    .ll_row{
+        grid-row: 3;
+        grid-column: 1 / span 3;
+        margin: 0 auto;
+    }
+    .ll_column{
+        grid-row: 4;
+        grid-column: 1;
+        grid-column: 1 / span 3;
+        display: flex;
+        padding-right: 10px;
+        margin: 0 auto;
+        font-size: 40%;
+    }
+    .ll_row h2{
+        font-size: 1rem;
+    }
+    
+    .ll_column p{
+        font-size: 1rem;
+    }
+    .ll_column>div{
+        padding-right: 10px;
+    }
+
 }
 @media (max-width: 480px) {
+    .lisa-article {
+        width: 400px;
+        margin: 0 auto;
+    }
 }
