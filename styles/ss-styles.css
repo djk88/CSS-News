@@ -136,7 +136,7 @@ img {
 
     .item-type-article{
         display: block;
-        height: 100%;
+        /* height: 100%; */
     }
     .paragraph-hide{
         display:contents;
