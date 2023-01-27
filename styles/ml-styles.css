@@ -1,5 +1,5 @@
 /* All of the styles for Mario Lopez */
-.nav-h1{
+.nav-h1 {
     text-align: center;
     background-color: black;
     color: white;
@@ -18,18 +18,18 @@
 }
 
 .hamburger-menu {
-	width: 60px;
-	height: 40px;
-	background-color: black;  
+    width: 60px;
+    height: 40px;
+    background-color: black;
     color: white;
 }
 
 .hamburger-menu:before {
-    content:'\2630';
+    content: '\2630';
 }
 
 .hamburger-menu:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 nav {
@@ -49,13 +49,13 @@ nav.show {
 }
 
 nav ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 /*Adjacent Sibiling*/
-nav li + li {
+nav li+li {
     border-top: 2px solid grey;
 }
 
@@ -64,13 +64,13 @@ nav a {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
-    
+
     display: inline-block;
     padding: 10px 15px;
     position: relative;
 }
 
-nav a:after {    
+nav a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 5;
     content: "";
@@ -83,9 +83,9 @@ nav a:after {
     width: 0;
 }
 
-nav a:hover:after { 
-    width: 100%; 
-    left: 0; 
+nav a:hover:after {
+    width: 100%;
+    left: 0;
 }
 
 .nav-lateral {
@@ -98,32 +98,32 @@ footer {
     background-color: black;
     padding: 10px;
     width: 100%;
-    font-size: 12px;
+    font-size: var(--footerTextSize);
 }
 
-.footer-flex{
+.footer-flex {
     display: flex;
     justify-content: space-around;
 }
 
-.footer-bottom{
+.footer-bottom {
     text-align: center;
     color: white;
 }
 
 /*Attribute Selector*/
-a[href$="#1"]{
+a[href$="#1"] {
     text-decoration: none;
     color: white;
 }
 
 /*Attribute Selector*/
-a[href$="#1"]:hover{
+a[href$="#1"]:hover {
     text-decoration: underline;
 }
 
 @media (min-width: 760px) {
-	.hamburger-menu {
+    .hamburger-menu {
         display: none;
     }
 
@@ -140,12 +140,12 @@ a[href$="#1"]:hover{
         justify-content: space-around;
     }
 
-    nav li{
+    nav li {
         width: 100%;
     }
 
     /*Adjacent Sibiling*/
-    nav li + li{
+    nav li+li {
         border-top: none;
     }
 
