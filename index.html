@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS-News</title>
+    <title>BCIT-News</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
@@ -14,30 +14,129 @@
     <link rel="stylesheet" href="/styles/ss-styles.css">
     <link rel="stylesheet" href="/styles/ll-styles.css">
     <link rel="stylesheet" href="/styles/ml-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-    <nav>
-        <header>
-            <div class="nav-content">
-                <div class="nav-hamburger">
-                </div>
+    <header>
+        <div class="nav-lateral">
+            <div>
+                <h1 class="nav-h1">BCIT News</h1>
             </div>
-        </header>
-    </nav>
-    <div class="sub-nav-continer">
-        <nav class="sub-nav">
-            <div class="sub-nav-contnent">
-                <a class="sub-nav-item" href="#"></a>
-                <a class="sub-nav-item" href="#"></a>
-                <a class="sub-nav-item" href="#"></a>
-                <a class="sub-nav-item" href="#"></a>
+            <div>
+                <button class="hamburger-menu" id="btn-menu">
+                    <span class="hamburger-menu-content" tabindex="-1">
+                        <span class="sr-only">Menu</span>
+                        <span class="bar" id="bar"></span>
+                    </span>
+                </button>
             </div>
+        </div>
+        <nav id="main-navigation">
+            <ul>
+                <li><a href="#0">News</a></li>
+                <li><a href="#0">Shows</a></li>
+                <li><a href="#0">Live</a></li>
+                <li><a href="#0">Local</a></li>
+                <li><a href="#0">Weather</a></li>
+            </ul>
         </nav>
-    </div>
+    </header>
     <main>
-        <article class="david-article"></article>
-
+        <section class="david-article">
+            <div class="article-heading-wrapper">
+                <div class="header-title">
+                    <h1 class="animate__animated animate__bounce animate__infinite infinite animate__slow ">Top Stories
+                    </h1>
+                </div>
+                <div class="component-wrapper">
+                    <article class="world-news">
+                        <span class="image-thumbnail-main">
+                            <a href="#">
+                                <img src="./images/burning-news.jpg" alt="Burning News">
+                            </a>
+                        </span>
+                        <div class="item-title-wrapper">
+                            <h3>President Resigns After Shocking Discovery of Alien Life</h3>
+                            <p>In a surprise move, President John Smith announced his resignation from office today,
+                                citing a "shocking discovery" as the reason for his decision.</p><br>
+                            <p>According to sources close to the President, he was informed of the existence of
+                                extraterrestrial life on Tuesday, and has been grappling with the ramifications of this
+                                discovery ever since.</p><br>
+                            <p>The President's resignation letter, released to the public this morning, states that "the
+                                revelation of the existence of intelligent alien life raises fundamental questions about
+                                our place in the universe, and the future of humanity as a whole."</p>
+                        </div>
+                    </article>
+                    <article class="tech-news">
+                        <span class="image-thumbnail-main">
+                            <a href="#">
+                                <img src="./images/tech-news.jpg" alt="Tech News">
+                            </a>
+                        </span>
+                        <div class="item-title-wrapper">
+                            <h3>New AI technology can predict natural disasters with 99.9% accuracy</h3>
+                            <p> A new artificial intelligence technology, developed by a team of scientists at XYZ
+                                Corporation, has been reported to have the ability to predict natural disasters with
+                                99.9% accuracy.</p><br>
+                            <p> The technology, which uses advanced machine learning algorithms and data
+                                from a variety of sources, including weather patterns and geological data, can
+                                reportedly predict earthquakes, floods, and hurricanes up to a week in advance.</p><br>
+                            <p> This is a significant advancement in the field of natural disaster prediction, as
+                                current methods are only able to provide predictions a few hours or days in advance.</p>
+                        </div>
+                    </article>
+                    <article class="business-news">
+                        <span class="image-thumbnail-main">
+                            <a href="#">
+                                <img src="./images/skyscraper.jpg" alt="Skyscraper">
+                            </a>
+                        </span>
+                        <div class="item-title-wrapper">
+                            <h3>XYZ Corporation acquires ABC Inc for $10 billion, creating industry giant</h3>
+                            <p>In a major move, XYZ Corporation announced today that it has acquired ABC Inc for a
+                                staggering $10 billion.</p><br>
+                            <p>This acquisition creates a new industry giant, with XYZ Corporation now controlling a
+                                significant market share in the industry. The acquisition was made to expand the
+                                company's product line and customer base, and to increase its competitiveness in the
+                                global market.</p><br>
+                            <p>The merger is expected to bring significant
+                                synergies, cost savings and revenue growth opportunities to the combined company.</p>
+                        </div>
+                    </article>
+                    <article class="new-highlight">
+                        <span class="image-thumbnail-sub">
+                            <a href="#">
+                                <img src="./images/ceo-lisa.jpg" alt="CEO Lisa" class="people-news">
+                        </span>
+                        <div class="item-title-wrapper">
+                            <h3>New CEO of ABC Inc pioneers 4 day work week</h3>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="sports-highlight">
+                        <span class="image-thumbnail-sub">
+                            <a href="#">
+                                <img src="./images/skateboarder-paul.jpg" alt="skateboarder Paul" class="people-news">
+                        </span>
+                        <div class="item-title-wrapper">
+                            <h3>Legendary skateborder Paul wins another X-Games title</h3>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="trending-highlight">
+                        <span class="image-thumbnail-sub">
+                            <a href="#">
+                                <img src="./images/singer-jake.jpg" alt="Singer Jake" class="people-news">
+                        </span>
+                        <div class="item-title-wrapper">
+                            <h3>Pop artist Jake coming to Vancouver!</h3>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+        </section>
+        </div>
         <section class="sheng-section">
             <div class = "heading_topstories">
                 <h1 class = "topstories_title">More Top Stories</h1>
@@ -131,7 +230,6 @@
                     </div>
                 </a>
             </article>
-
             <article class="item item-type-article">
                 <a href="#" class = "item_anchor list-grid-with-following underline-controller">
                     <span class = "images-container">
@@ -150,16 +248,53 @@
                     </div>
                 </a>
             </article>
-    
         </div>
         </section>
-
-
-        <article class="lisa-article"></article>
+        <section class="lisa-article">
+            <div class="ll_header">
+                <h1 class="animate__animated animate__bounce animate__infinite infinite animate__slow ">MoneyWatch</h1>
+            </div>
+            <div class="ll_main">
+                <span>
+                    <img src="/images/welding.png" alt="Welding">
+                </span>
+                <h3>Why millions of men have left the workforce</h3>
+                <p>A large number of American men between 25 and 54 years old are not working or even looking for work.
+                </p>
+            </div>
+            <article class="ll_row">
+                <div>
+                    <img src="/images/goodyearTires.jpg" alt="Goodyear Tires">
+                    <h3>Grand jury probes faulty Goodyear tires blamed for 8 deaths</h3>
+                </div>
+                <div>
+                    <img src="/images/MadisonSquareGarden.jpg" alt="Madison Square Garden">
+                    <h3>Madison Square Garden ban on lawyer foes may be illegal, AG says</h3>
+                </div>
+            </article>
+            <aside class="ll_column">
+                <div class="ll_column_1 aside">
+                    <img src="/images/haribo_jelly.jpg" alt="Haribo Jelly">
+                    <p>CBD has too many safety unknowns to be regulated, FDA says</p>
+                </div>
+                <div class="ll_column_2 aside">
+                    <img src="/images/southwest.jpg" alt="SouthWest">
+                    <p>Feds probing Southwest Airlines over "holiday debacle that stranded millions"</p>
+                </div>
+            </aside>
+        </section>
     </main>
 </body>
 <footer>
-
+    <div>
+        <ul class="footer-flex">
+            <li><a href="#1">About Us</a></li>
+            <li><a href="#1">Contact</a></li>
+            <li><a href="#1">Join Us</a></li>
+            <li><a href="#1">Legal</a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">2023 - SSD Team</div>
 </footer>
 <script src="/scripts/ml-scripts.js"></script>
 

@@ -1,1 +1,155 @@
 /* All of the styles for Mario Lopez */
+.nav-h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.hamburger-menu {
+    width: 60px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+.hamburger-menu:before {
+    content: '\2630';
+}
+
+.hamburger-menu:hover {
+    cursor: pointer;
+}
+
+nav {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+nav.show {
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*Adjacent Sibiling*/
+nav li+li {
+    border-top: 2px solid grey;
+}
+
+nav a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+}
+
+nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 5;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--accent-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+nav a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-lateral {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    font-size: var(--footerTextSize);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: white;
+}
+
+/*Attribute Selector*/
+a[href$="#1"] {
+    text-decoration: none;
+    color: white;
+}
+
+/*Attribute Selector*/
+a[href$="#1"]:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 760px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    nav {
+        visibility: visible;
+        opacity: 1;
+        height: 100%;
+        position: static;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    /*Adjacent Sibiling*/
+    nav li+li {
+        border-top: none;
+    }
+
+    .nav-lateral {
+        display: block;
+    }
+}

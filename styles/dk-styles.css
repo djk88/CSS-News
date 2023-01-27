@@ -1,1 +1,171 @@
 /* All of the styles for David Kim  */
+
+
+/* General styles */
+.david-article {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.header-title {
+    font-size: var(--articleHeaderTextSize);
+    font-weight: 700;
+}
+
+.component-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.item-title-wrapper {
+    padding: 15px;
+    padding-top: 0px;
+    font-size: var(--articleTextSize);
+}
+
+.item-title-wrapper a {
+    text-decoration: none;
+}
+
+
+/* World news styles */
+.world-news {
+    display: grid;
+    grid-column: 1 / span 3;
+}
+
+.world-news span {
+    grid-column: 1 / span 2;
+}
+
+.world-news .item-title-wrapper {
+    grid-column: 3;
+}
+
+
+
+/* Tech news styles  */
+.tech-news {
+    display: grid;
+    grid-column: 1 / span 3;
+}
+
+.tech-news span {
+    grid-column: 2 / span 3;
+}
+
+.tech-news .item-title-wrapper {
+    grid-row: 1;
+    padding-left: 0px;
+}
+
+
+
+
+
+/* business styles */
+.business-news {
+    display: grid;
+    grid-column: 1 / span 3;
+}
+
+.business-news span {
+    grid-column: 1 / span 2;
+}
+
+.business-news .item-title-wrapper {
+    grid-column: 3;
+}
+
+.people-news {
+    border-radius: 50%;
+}
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .david-article {
+        width: 700px
+    }
+
+    .world-news .item-title-wrapper {
+        grid-column: 1 / span 2;
+    }
+
+    .tech-news span {
+        grid-column: 1;
+    }
+
+    .tech-news .item-title-wrapper {
+        grid-row: 2;
+    }
+
+    .business-news .item-title-wrapper {
+        grid-column: 1;
+    }
+
+    .new-highlight {
+        grid-column: 1;
+        margin: 0 auto;
+    }
+
+    .sports-highlight {
+        grid-column: 2;
+        margin: 0 auto;
+    }
+
+    .trending-highlight {
+        grid-column: 3;
+        margin: 0 auto;
+    }
+
+    /* Example of css transform  */
+    .people-news {
+        border-radius: 00%;
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+    .david-article {
+        width: 400px
+    }
+
+    .new-highlight {
+        grid-column: 1 / span 3;
+        margin: 0 auto;
+    }
+
+    .sports-highlight {
+        grid-column: 1 / span 3;
+        margin: 0 auto;
+    }
+
+    .trending-highlight {
+        grid-column: 1 / span 3;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/* example of a descendant selector */
+.item-title-wrapper h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: black;
+}
+
+/* example of a child selector */
+div>h1 {
+    color: var(--accent-color)
+}
+
+/* example of  psedo selector */
+.item-title-wrapper:last-child {
+    color: var(--accent-color)
+}
