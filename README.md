@@ -19,23 +19,23 @@ Build a news network home page that incorporates what we learned today.
 Instructions:
 1. Build the home page for a network news web site (ex: CNN or CBC news)
 
-2. The web page must utilize following:
+2. The web page must utilize following:s
     a. At least one of the following CSS technologies
-        i. CSS transitions
-        ii. CSS animations
-        iii. CSS transforms
+        i. CSS transitions  ✔️
+        ii. CSS animations  ✔️
+        iii. CSS transforms ✔️
 
 3. The web page must include at least the following:
-    a. 3 or more CSS custom properties
+    a. 3 or more CSS custom properties -- DECLARED ON GLOBAL STYLES BUT NEED TO BE IMPLEMENTED ⚠️          
     b. 1 or more instance each of the following selectors:
-        i. Descendant
-        ii. Child
-        iii. Adjacent
-        iv. General sibling
-        v. Attribute selector
-        vi. Any of the following pseudo selectors:
+        i. Descendant ✔️
+        ii. Child ✔️
+        iii. Adjacent ❌
+        iv. General sibling ❌
+        v. Attribute selector ❌
+        vi. Any of the following pseudo selectors: ✔️
             1. :first-child
-            2. :last-child
+            2. :last-child✔️
             3. :nth-child()
 
 4. The web page must be fully responsive and be usable between screen widths of 320px up to 1920px
