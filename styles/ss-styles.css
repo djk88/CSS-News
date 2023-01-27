@@ -1,46 +1,54 @@
 /* All of the styles for Sheng Sheng */
 @charset "utf-8";
+
 /* CSS Reset */
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     padding: 0;
     margin: 0;
 }
+
 .sheng-section {
-    width: 480px;
+    /* width: 480px; */
     margin: 0 auto;
-    
+
 }
 
-article{
+article {
     display: block;
 }
 
-.item_anchor{
+.item_anchor {
     display: flex;
     position: relative;
 }
-.list-grid-with-top{
+
+.list-grid-with-top {
     flex-direction: column;
 }
 
-.list-grid-with-following{
+.list-grid-with-following {
     flex-direction: row-reverse;
     justify-content: space-between
 }
 
-.item-topic-politics .item_title-wrapper{
+.item-topic-politics .item_title-wrapper {
     width: 100%;
 
 }
-.item_title-wrapper{
+
+.item_title-wrapper {
     width: 60%;
 }
-.images-container{
+
+.images-container {
     width: 40%;
 }
 
@@ -52,13 +60,13 @@ img {
 /* h3 {
     text-align: center;
 } */
-.heading_topstories{
+.heading_topstories {
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
-.images-container{
+.images-container {
     max-width: 320px;
     /* height: 90px; */
     /* object-fit: fill; */
@@ -66,17 +74,15 @@ img {
     /* border: 1px solid red; */
 }
 
-.topstories_title{
+.topstories_title {
     font-size: 1.5rem;
     line-height: 1.09;
     font-weight: 700;
     margin: 0 0 15px 0
-
-
 }
 
 
-.item_head{
+.item_head {
     font-size: 1.07rem;
     line-height: 1.18;
     font-weight: 700;
@@ -86,60 +92,90 @@ img {
 }
 
 
-.underline-controller{
+.underline-controller {
     text-decoration: none;
 }
 
-.underline-controller:hover{
+.underline-controller:hover {
     text-decoration: underline;
-    
+
 }
-.underline-controller:hover .item_metadata li.item_data:hover{
+
+.underline-controller:hover .item_metadata li.item_data:hover {
     text-decoration: none !important;
 
 }
-.topstories_title{
-    color:var(--accent-color);
+
+.topstories_title {
+    color: var(--accent-color);
 }
 
-.paragraph-hide{
+.paragraph-hide {
     display: none;
     color: var(--accent-color);
 }
-.item{
+
+.item {
     margin-bottom: 15px;
 }
-.list-grid-with-following .item_head{
+
+.list-grid-with-following .item_head {
     font-size: 0.9rem;
 }
+
 .item_metadata {
     font-size: 0.8rem;
 }
 
-/* @media (min-width: 768px) {
-} */
+
+div>h1 {
+    color: var(--accent-color);
+}
+
+.heading_topstories {
+    font-size: var(--articleHeaderTextSize);
+    font-weight: 700;
+}
+
+
+
+@media (max-width: 768px) {
+    .sheng-section {
+        width: 700px
+    }
+}
+
+
+@media (max-width: 769px) {
+    .sheng-section {
+        width: 700px
+    }
+}
+
+
 @media (min-width: 900px) {
 
     .sheng-section {
         width: 900px;
-        
+
     }
-    
-    .grid-container{
+
+    .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 3fr 3fr 3fr;
-        grid-gap:20px;
+        grid-gap: 20px;
 
 
     }
 
-    .item-type-article{
+    .item-type-article {
         display: block;
         /* height: 100%; */
     }
-    .paragraph-hide{
-        display:contents;
+
+    .paragraph-hide {
+        display: contents;
     }
 
     .item-topic-politics {
@@ -148,27 +184,37 @@ img {
 
     }
 
-    .list-grid-with-following  {
+    .list-grid-with-following {
         display: flex;
         flex-direction: column;
     }
 
-    .list-grid-with-following  > .images-container {
+    .list-grid-with-following>.images-container {
         width: 100%;
     }
-    .item_title-wrapper{
+
+    .item_title-wrapper {
         width: 100%;
 
     }
-    .list-grid-with-following   .item_head {
+
+    .list-grid-with-following .item_head {
         font-size: 1rem;
     }
+
     .item_metadata {
         font-size: 0.8rem;
     }
+
     .item-topic-politics .item_head {
         font-size: 1.6rem;
     }
 
 
+}
+
+@media (max-width: 480px) {
+    .sheng-section {
+        width: 400px
+    }
 }
