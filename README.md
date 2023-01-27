@@ -30,7 +30,7 @@ Instructions:
     b. 1 or more instance each of the following selectors:
         i. Descendant ✔️
         ii. Child ✔️
-        iii. Adjacent ❌
+        iii. Adjacent ✔️
         iv. General sibling ❌
         v. Attribute selector ✔️
         vi. Any of the following pseudo selectors: ✔️
