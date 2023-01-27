@@ -1,1 +1,39 @@
 /* All of the styles for Lisa Lee */
+.lisa-article {
+    border: 2px solid red;
+    width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 1.5fr 200px;
+    column-gap: 20px;
+    row-gap: 10px;
+    grid-template-areas: "header  header  header"
+                         "main    main    column"
+                         "row    row   column";
+}
+
+
+.ll_header{
+    grid-area: header;
+}
+
+.ll_main{
+    grid-area: main;
+}
+
+.ll_row{
+    grid-area: row;
+    display: flex;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+
+
+.ll_column{
+    grid-area: column;
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}
