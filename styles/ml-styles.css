@@ -102,8 +102,8 @@ footer {
     background-color: black;
     color: white;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;
+    bottom: 0;*/
     width: 100%;
     font-size: 12px;
 }
